@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const imgElement = document.createElement('img');
         imgElement.src = imgDir + entry.name;
         imgElement.alt = entry.name;
-        imgElement.style.width = "50px"; // Adjust image size as needed
-        imgElement.style.height = "50px";
+        imgElement.style.width = "100px"; // Adjust image size as needed
+        imgElement.style.height = "100px";
         imageCell.appendChild(imgElement);
         row.appendChild(imageCell);
   
