@@ -3,7 +3,7 @@ const imgNaming = ""; // No specific naming convention needed for single-charact
 const arrayLength = 26; // 26 images, a.jpg to z.jpg
 const imageArray = [], sessionStorageArray = [];
 let baseRating = 1400;
-const k = 32; // K-factor for Elo rating system
+const k = 32; // K-factor for Elo rating system 
 
 // Get a random item from the array
 function getRandomItem(array) {
