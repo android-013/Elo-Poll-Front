@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const imgDir = "images/"; // Folder where images are stored
     const imageNames = [..."abcdefghijklmnopqrstuvwxyz"].map(letter => `${letter}.jpg`); // Array of image names
     const baseRating = 1400; // Default rating
-  
     const tableBody = document.getElementById('rankingTable');
   
     // Function to get image rating from sessionStorage or set to default
