@@ -9,25 +9,34 @@
 </head>
 
 <body>
-  <div class="ranking-wrapper">
-    <h1>Image Rankings</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Image</th>
-          <th>Rating</th>
-        </tr>
-      </thead>
-      <tbody id="rankingTable">
-        <!-- Rankings will be populated here -->
-      </tbody>
-    </table>
+  <div id="pageLoader" class="page-loader" aria-live="polite" aria-label="Loading rankings">
+    <div class="loader-box">
+      <span class="loader-spinner"></span>
+      <p>Loading rankings...</p>
+    </div>
   </div>
 
-  <div class="back-button-wrapper">
-    <a href="index.html" class="back-button">Back</a>
-  </div>  
+  <main class="ranking-wrapper">
+    <h1>Image Rankings</h1>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Image</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody id="rankingTable">
+          <!-- Rankings will be populated here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="back-button-wrapper">
+      <a href="index.html" class="back-button">Back</a>
+    </div>
+  </main>
 
   <script src="ranking.js"></script>
 </body>
