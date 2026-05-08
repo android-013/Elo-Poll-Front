@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +10,14 @@
 </head>
 
 <body>
-  <div>
+  <div id="pageLoader" class="page-loader" aria-live="polite" aria-label="Loading content">
+    <div class="loader-box">
+      <span class="loader-spinner"></span>
+      <p>Loading images...</p>
+    </div>
+  </div>
+
+  <div class="page-shell">
     <div class="wrapper">
       <div class="title">
         <h1>ELO POLL</h1>
@@ -19,13 +27,21 @@
           Were we let in for our looks? No. Will we be judged on them? Yes.
         </h3>
         <h2>Who's Hotter? Click to Choose.</h2>
-        
-        <div class="img-wrapper">
-          <img src="" alt="Left Image" id="leftImg" onclick="clickLeft()" />
+
+        <div class="img-wrapper" aria-label="Choose between two images">
+          <div class="choice-card" id="leftCard">
+            <span class="choice-loader" aria-hidden="true"></span>
+            <img src="" alt="Left Image" id="leftImg" class="choice-image" onclick="clickLeft()" decoding="async" />
+          </div>
+
           <h3 class="or-char">OR</h3>
-          <img src="" alt="Right Image" id="rightImg" onclick="clickRight()" />
+
+          <div class="choice-card" id="rightCard">
+            <span class="choice-loader" aria-hidden="true"></span>
+            <img src="" alt="Right Image" id="rightImg" class="choice-image" onclick="clickRight()" decoding="async" />
+          </div>
         </div>
-        
+
         <ul class="footer-list">
           <li><a href="ranking.html">Rankings</a></li>
         </ul>
@@ -33,7 +49,6 @@
     </div>
   </div>
 
-  <script type="text/javascript"></script>
   <script src="main.js"></script>
 </body>
 
